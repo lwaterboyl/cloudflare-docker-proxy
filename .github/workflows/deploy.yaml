@@ -14,6 +14,10 @@ jobs:
     name: Build & Deploy
     steps:
       - uses: actions/checkout@v4
+      - name: SetUp timezone
+        uses: zcong1993/setup-timezone@master
+        with:
+          timezone: Asina/Shanghai
       - name: Publish
         uses: cloudflare/wrangler-action@v3
         with:
