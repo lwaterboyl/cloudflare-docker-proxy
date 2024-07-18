@@ -15,7 +15,7 @@ const routes = {
     "ghcr.kklib.cloud": "https://ghcr.io",
     "cloudsmith.kklib.cloud": "https://docker.cloudsmith.io",
     "ecr.kklib.cloud": "https://public.ecr.aws",
-  };
+};
 
 function routeByHosts(host) {
   if (host in routes) {
