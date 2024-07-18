@@ -21,13 +21,13 @@ const dockerHub = "https://registry-1.docker.io";
 // };
 
 const routes = {
-    "docker.klib.cloud": "https://registry-1.docker.io",
-    "quay.klib.cloud": "https://quay.io",
-    "gcr.klib.cloud": "https://gcr.io",
-    "k8s-gcr.klib.cloud": "https://k8s.gcr.io",
-    "k8s.klib.cloud": "https://registry.k8s.io",
-    "ghcr.klib.cloud": "https://ghcr.io",
-    "cloudsmith.klib.cloud": "https://docker.cloudsmith.io",
+    "docker.kklib.cloud": "https://registry-1.docker.io",
+    "quay.kklib.cloud": "https://quay.io",
+    "gcr.kklib.cloud": "https://gcr.io",
+    "k8s-gcr.kklib.cloud": "https://k8s.gcr.io",
+    "k8s.kklib.cloud": "https://registry.k8s.io",
+    "ghcr.kklib.cloud": "https://ghcr.io",
+    "cloudsmith.kklib.cloud": "https://docker.cloudsmith.io",
   };
 
 function routeByHosts(host) {

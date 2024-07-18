@@ -13,13 +13,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.klib.cloud", custom_domain = true },
-  { pattern = "quay.klib.cloud", custom_domain = true },
-  { pattern = "gcr.klib.cloud", custom_domain = true },
-  { pattern = "k8s-gcr.klib.cloud", custom_domain = true },
-  { pattern = "k8s.klib.cloud", custom_domain = true },
-  { pattern = "ghcr.klib.cloud", custom_domain = true },
-  { pattern = "cloudsmith.klib.cloud", custom_domain = true },
+  { pattern = "docker.kklib.cloud", custom_domain = true },
+  { pattern = "quay.kklib.cloud", custom_domain = true },
+  { pattern = "gcr.kklib.cloud", custom_domain = true },
+  { pattern = "k8s-gcr.kklib.cloud", custom_domain = true },
+  { pattern = "k8s.kklib.cloud", custom_domain = true },
+  { pattern = "ghcr.kklib.cloud", custom_domain = true },
+  { pattern = "cloudsmith.kklib.cloud", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -28,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.klib.cloud", custom_domain = true }
+# route = { pattern = "docker-staging.kklib.cloud", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
