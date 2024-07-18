@@ -5,20 +5,30 @@ addEventListener("fetch", (event) => {
 
 const dockerHub = "https://registry-1.docker.io";
 
-const routes = {
-  // production
-  "docker.libcuda.so": dockerHub,
-  "quay.libcuda.so": "https://quay.io",
-  "gcr.libcuda.so": "https://gcr.io",
-  "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-  "k8s.libcuda.so": "https://registry.k8s.io",
-  "ghcr.libcuda.so": "https://ghcr.io",
-  "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
-  "ecr.libcuda.so": "https://public.ecr.aws",
+// const routes = {
+//   // production
+//   "docker.libcuda.so": dockerHub,
+//   "quay.libcuda.so": "https://quay.io",
+//   "gcr.libcuda.so": "https://gcr.io",
+//   "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
+//   "k8s.libcuda.so": "https://registry.k8s.io",
+//   "ghcr.libcuda.so": "https://ghcr.io",
+//   "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
+//   "ecr.libcuda.so": "https://public.ecr.aws",
 
-  // staging
-  "docker-staging.libcuda.so": dockerHub,
-};
+//   // staging
+//   "docker-staging.libcuda.so": dockerHub,
+// };
+
+const routes = {
+    "docker.klib.cloud": "https://registry-1.docker.io",
+    "quay.klib.cloud": "https://quay.io",
+    "gcr.klib.cloud": "https://gcr.io",
+    "k8s-gcr.klib.cloud": "https://k8s.gcr.io",
+    "k8s.klib.cloud": "https://registry.k8s.io",
+    "ghcr.klib.cloud": "https://ghcr.io",
+    "cloudsmith.klib.cloud": "https://docker.cloudsmith.io",
+  };
 
 function routeByHosts(host) {
   if (host in routes) {
